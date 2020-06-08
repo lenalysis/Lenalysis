@@ -51,5 +51,5 @@ var mt = new MersenneTwister32(seedValue);
 var seq = DoubleSequence.RangeClosed(mt, 0, 10, true);
 
 for(var i=0; i<100; i++)
-    Console.Log($"[{i}] {seq.Next()});
+    Console.Log($"[{i}] {seq.Next()}");
 ```
