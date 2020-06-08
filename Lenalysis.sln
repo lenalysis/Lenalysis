@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Core", "src\Lenalysis.Core\Lenalysis.Core.csproj", "{6C5744CB-4AF3-4598-B56C-C33C3B8EF1DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random", "src\Lenalysis.Random\Lenalysis.Random.csproj", "{142B6F0A-6C47-438F-BABB-2FAB3F4B9AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random.Tests", "src\Lenalysis.Random.Tests\Lenalysis.Random.Tests.csproj", "{A24C4244-0BD4-437A-A7A5-730351CC35E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C5744CB-4AF3-4598-B56C-C33C3B8EF1DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5744CB-4AF3-4598-B56C-C33C3B8EF1DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5744CB-4AF3-4598-B56C-C33C3B8EF1DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5744CB-4AF3-4598-B56C-C33C3B8EF1DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142B6F0A-6C47-438F-BABB-2FAB3F4B9AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142B6F0A-6C47-438F-BABB-2FAB3F4B9AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142B6F0A-6C47-438F-BABB-2FAB3F4B9AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142B6F0A-6C47-438F-BABB-2FAB3F4B9AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
