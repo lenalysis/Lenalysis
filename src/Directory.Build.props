@@ -6,7 +6,7 @@
 
     <PropertyGroup>
         <VersionPrefix>0.0.1</VersionPrefix>
-        <VersionSuffix>testpush-2</VersionSuffix>
+        <VersionSuffix>testpush-3</VersionSuffix>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -14,6 +14,10 @@
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <ItemGroup>
