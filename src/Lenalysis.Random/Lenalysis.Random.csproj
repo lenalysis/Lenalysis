@@ -5,7 +5,13 @@
     </PropertyGroup>
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <Title>Lenalysis random number generation (including Mersenne Twister)</Title>
+        <Description>Provides an implementation of several versions of the Mersenne Twister suitable for use in actuarial and financial calculations or other places where MT is useful.</Description>
+        <PackageTags>MersenneTwister;RandomNumber;Random;Actuarial;RandomSequence;MT</PackageTags>
+        <PackageProjectUrl>https://github.com/lenalysis/Lenalysis</PackageProjectUrl>
     </PropertyGroup>
 
 </Project>

@@ -1,9 +1,6 @@
-using System;
-using System.Diagnostics.CodeAnalysis;
-
-// Based on https://en.wikipedia.org/wiki/Mersenne_Twister pseudocode
 namespace Lenalysis.Random;
 
+// Based on https://en.wikipedia.org/wiki/Mersenne_Twister pseudocode
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public class MersenneTwister32: IIntegerSequence32
 {

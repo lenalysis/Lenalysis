@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random", "src\Len
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random.Tests", "src\Lenalysis.Random.Tests\Lenalysis.Random.Tests.csproj", "{A24C4244-0BD4-437A-A7A5-730351CC35E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random.Quasi", "src\Lenalysis.Random.Quasi\Lenalysis.Random.Quasi.csproj", "{2DA56316-D08B-4158-8980-BC9EE9E40A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lenalysis.Random.Quasi.Tests", "src\Lenalysis.Random.Quasi.Tests\Lenalysis.Random.Quasi.Tests.csproj", "{363FF7F3-6BB5-4D59-99A0-A521874EC159}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A24C4244-0BD4-437A-A7A5-730351CC35E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA56316-D08B-4158-8980-BC9EE9E40A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA56316-D08B-4158-8980-BC9EE9E40A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA56316-D08B-4158-8980-BC9EE9E40A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA56316-D08B-4158-8980-BC9EE9E40A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363FF7F3-6BB5-4D59-99A0-A521874EC159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363FF7F3-6BB5-4D59-99A0-A521874EC159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363FF7F3-6BB5-4D59-99A0-A521874EC159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363FF7F3-6BB5-4D59-99A0-A521874EC159}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

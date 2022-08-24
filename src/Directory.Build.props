@@ -5,6 +5,11 @@
     </PropertyGroup>
 
     <PropertyGroup>
+        <VersionPrefix>0.0.1</VersionPrefix>
+        <VersionSuffix>testpush-1</VersionSuffix>
+    </PropertyGroup>
+
+    <PropertyGroup>
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <IncludeSymbols>true</IncludeSymbols>

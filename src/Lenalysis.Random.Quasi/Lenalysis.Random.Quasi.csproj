@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>latestmajor</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lenalysis.Random\Lenalysis.Random.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <Title>Lenalysis quasi random number generation</Title>
+        <Description>Provides an implementation of some low discrepancy sequences suitable for use in actuarial and financial calculations or other places where MT is useful.</Description>
+        <PackageTags>LDS;QuasiRandom;Random;Actuarial;RandomSequence;LowDiscrepancySequence</PackageTags>
+        <PackageProjectUrl>https://github.com/lenalysis/Lenalysis</PackageProjectUrl>
+    </PropertyGroup>
+
+</Project>

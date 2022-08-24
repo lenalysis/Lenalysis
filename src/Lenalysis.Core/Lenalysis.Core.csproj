@@ -2,8 +2,9 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <LangVersion>latestmajor</LangVersion>
+
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
 
 </Project>
