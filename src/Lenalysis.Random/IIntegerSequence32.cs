@@ -1,7 +1,6 @@
-namespace Lenalysis.Random
+namespace Lenalysis.Random;
+
+public interface IIntegerSequence32
 {
-    public interface IIntegerSequence32
-    {
-        uint Next();
-    }
+    uint Next();
 }

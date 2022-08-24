@@ -1,7 +1,6 @@
-namespace Lenalysis.Random
+namespace Lenalysis.Random;
+
+public interface IIntegerSequence64
 {
-    public interface IIntegerSequence64
-    {
-        ulong Next();
-    }
+    ulong Next();
 }

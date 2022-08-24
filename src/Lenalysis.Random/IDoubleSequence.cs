@@ -1,7 +1,6 @@
-namespace Lenalysis.Random
+namespace Lenalysis.Random;
+
+public interface IDoubleSequence
 {
-    public interface IDoubleSequence
-    {
-        double Next();
-    }
+    double Next();
 }
