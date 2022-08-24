@@ -6,7 +6,7 @@
 
     <PropertyGroup>
         <VersionPrefix>0.0.1</VersionPrefix>
-        <VersionSuffix>testpush-1</VersionSuffix>
+        <VersionSuffix>testpush-2</VersionSuffix>
     </PropertyGroup>
 
     <PropertyGroup>
