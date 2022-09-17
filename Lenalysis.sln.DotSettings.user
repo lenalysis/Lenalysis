@@ -3,6 +3,19 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=930135e6_002Dc790_002D4b1b_002D85eb_002D5a0205915b51/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SimpleTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SimpleTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.RR2PermutationTests.SimpleTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.MathworksTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.GrayCodeTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SobolTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SobolTest2&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.BuildDirectionVector&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.BuildDirectionVectorFile&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SobolTest1&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SobolTest3&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.FPTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.HaltonSequenceTests.SobolTest3d&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.PrimeNumbersTests.RelativePrime&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::363FF7F3-6BB5-4D59-99A0-A521874EC159::net6.0::Lenalysis.Random.Quasi.Tests.PrimeNumbersTests.ThrowsOnInputTooBig&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

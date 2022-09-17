@@ -35,5 +35,6 @@
 
     <ItemGroup>
         <Compile Include="$(MSBuildThisFileDirectory)/Nullable.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)/IsExternalInit.cs" />
     </ItemGroup>
 </Project>

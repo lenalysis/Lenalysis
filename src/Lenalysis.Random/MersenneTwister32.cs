@@ -1,9 +1,15 @@
 namespace Lenalysis.Random;
 
-// Based on https://en.wikipedia.org/wiki/Mersenne_Twister pseudocode
+/// <summary>
+/// A 32-bit Mersenne Twister RNG implementation based on the pseudocode on the wikipedia page.
+/// </summary>
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public class MersenneTwister32: IIntegerSequence32
 {
+    /// <summary>
+    /// Construct a MT 64-bit instance using the provided seed.
+    /// </summary>
+    /// <param name="seed">A seed value used to construct the sequence</param>
     public MersenneTwister32(uint seed)
     {
         MT[0] = seed;
@@ -12,8 +18,18 @@ public class MersenneTwister32: IIntegerSequence32
         index = n;
     }
 
+    /// <summary>
+    /// State representation for MT32 state, to allow save/restore/snapshotting behavior.
+    /// </summary>
     public class State
     {
+        /// <summary>
+        /// Constructs the state from an index and matrix (the two items stored internally by the MT32 instance.
+        /// </summary>
+        /// <param name="index">The index into the state matrix for the current position</param>
+        /// <param name="matrix">The state matrix of values</param>
+        /// <exception cref="ArgumentNullException">Matrix cannot be null</exception>
+        /// <exception cref="InvalidOperationException">The matrix was either of the wrong length (624 entries), or index was not between zero and the length of the matrix (inclusive)</exception>
         public State(uint index, [NotNull] uint[] matrix)
         {
             if (matrix == null)
@@ -27,10 +43,21 @@ public class MersenneTwister32: IIntegerSequence32
             Matrix = matrix;
         }
 
+        /// <summary>
+        /// Index into the matrix to read the next value from
+        /// </summary>
         public readonly uint Index;
+
+        /// <summary>
+        /// The matrix of currently constructed values
+        /// </summary>
         public readonly uint[] Matrix;
     }
 
+    /// <summary>
+    /// Construct a MT 32-bit sequence from state that was previously exported by an object of this type
+    /// </summary>
+    /// <param name="stateToRestore">The previously exported state</param>
     public MersenneTwister32(State stateToRestore)
     {
         index = stateToRestore.Index;
@@ -41,6 +68,10 @@ public class MersenneTwister32: IIntegerSequence32
 #endif
     }
 
+    /// <summary>
+    /// Export the state for this MT32 object to allow restore later.
+    /// </summary>
+    /// <returns>An exported state suitable for restoring later</returns>
     public State ExportState()
     {
         var clone = new uint[n];
@@ -52,6 +83,10 @@ public class MersenneTwister32: IIntegerSequence32
         return new State(index, clone);
     }
 
+    /// <summary>
+    /// Returns the next value in the MT32 sequence
+    /// </summary>
+    /// <returns>The next value</returns>
     public uint Next()
     {
         if (index >= n)

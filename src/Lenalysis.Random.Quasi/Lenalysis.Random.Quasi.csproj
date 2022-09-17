@@ -11,6 +11,11 @@
       <ProjectReference Include="..\Lenalysis.Random\Lenalysis.Random.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="SobolInternal\new-joe-kuo-6.21201.bin" />
+      <EmbeddedResource Include="SobolInternal\new-joe-kuo-6.21201.bin" />
+    </ItemGroup>
+
     <PropertyGroup>
         <Title>Lenalysis quasi random number generation</Title>
         <Description>Provides an implementation of some low discrepancy sequences suitable for use in actuarial and financial calculations or other places where MT is useful.</Description>

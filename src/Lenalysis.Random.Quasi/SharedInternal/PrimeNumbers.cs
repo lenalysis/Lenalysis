@@ -1,7 +1,13 @@
-namespace Lenalysis.Random.Quasi;
+namespace Lenalysis.Random.Quasi.SharedInternal;
 
-internal static class PrimeNumbers
+/// <summary>
+/// Provides some helper functions related to prime numbers.
+/// </summary>
+public static class PrimeNumbers
 {
+    /// <summary>
+    /// First 1000 primes starting with 2.
+    /// </summary>
     private static readonly short[] Primes =
     {
         2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
@@ -106,8 +112,43 @@ internal static class PrimeNumbers
         7841, 7853, 7867, 7873, 7877, 7879, 7883, 7901, 7907, 7919,
     };
 
-    public static int[] FirstNStartingWith2(int n)
+    /// <summary>
+    /// Returns the first <paramref name="n"/> primes (up to about the 1000th prime), not counting 1 as a prime (not useful for our needs)
+    /// </summary>
+    /// <param name="n">Number of primes to return</param>
+    /// <returns>The first <paramref name="n"/> primes (after 1)</returns>
+    /// <exception cref="ArgumentOutOfRangeException">This method only supports the first 1000 primes, so <paramref name="n"/> must be less than 1000.</exception>
+    public static int[] FirstNStartingWith2(ushort n)
     {
+        if (n >= Primes.Length)
+            throw new ArgumentOutOfRangeException(nameof(n), n,
+                $"This method only supports primes up to the first {Primes.Length} primes ({Primes.Last()})");
         return Primes.Take(n).Select(x => (int)x).ToArray();
+    }
+
+    /// <summary>
+    /// Confirms that a set of bases are relatively prime (i.e. none are multiples of each other).
+    /// </summary>
+    /// <param name="bases">The set of bases to check (presumably for use in Halton or other QRNG sequences)</param>
+    /// <returns>True if the bases are all relatively prime, false otherwise.</returns>
+    public static bool CheckRelativePrime(int[] bases)
+    {
+        for (var i = 0; i < bases.Length; i++)
+        {
+            var first = bases[i];
+            for (var j = i + 1; j < bases.Length; j++)
+            {
+                var second = bases[j];
+                if (first < second)
+                    if (second % first == 0)
+                        return false;
+                    else
+                        continue;
+                if (first % second == 0)
+                    return false;
+            }
+        }
+
+        return true;
     }
 }
