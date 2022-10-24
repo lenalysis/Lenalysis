@@ -13,5 +13,14 @@
         <PackageTags>MersenneTwister;RandomNumber;Random;Actuarial;RandomSequence;MT</PackageTags>
         <PackageProjectUrl>https://github.com/lenalysis/Lenalysis</PackageProjectUrl>
     </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\Lenalysis.Random.xml</DocumentationFile>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugSymbols>true</DebugSymbols>
+      <DocumentationFile>bin\Release\Lenalysis.Random.xml</DocumentationFile>
+    </PropertyGroup>
 
 </Project>
